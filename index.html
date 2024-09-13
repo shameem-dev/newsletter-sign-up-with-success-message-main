@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+        background-color: var(--Charcoal-Grey);
+    }
+    main {
+        font-family: "Roboto", sans-serif;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+        --Tomato: hsl(4, 100%, 67%);
+        --Dark-Slate-Grey: hsl(234, 29%, 20%);
+        --Charcoal-Grey: hsl(235, 18%, 26%);
+        --Grey: hsl(231, 7%, 60%);
+
+    }
+    .btn {
+        background:var(--Dark-Slate-Grey);
+        
+    }
+    .btn:hover {
+        background:var(--Tomato);
+        
+    }
+    .email-input {
+        outline-color: var(--Grey);
+    }
+    .text-sec__h2 {
+        color: var(--Dark-Slate-Grey);
+    }
+    .intro {
+        color: var(--Charcoal-Grey);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+    <main class="main flex justify-center items-center my-auto">
+        <div class="bg-white sm:p-4  sm:my-2 rounded-lg flex items-center justify-center " >
+            <div class="design sm:flex flex-row-reverse px-2 sm:px-0 " >
+                <div class="img-sec sm:ml-2">
+                    <img src="assets/images/illustration-sign-up-mobile.svg" alt="Sign-up image" class="w-full sm:hidden ">
+                    <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign-up image" class="hidden w-full sm:block">
+                </div>
+                <div class="text-sec mx-4 mt-8 max-w-3xl text-left flex  flex-col justify-center" >
+                    <div class="intro">
+                        <h2 class="text-sec__h2 font-bold text-4xl pb-2">Stay updated!</h2>
+                        <p class="text-sec__p py-2 font-normal ">Join 60,000+ product managers receiving monthly updates on:</p>
+                        <div class="list">
+                            <ul>
+                                <div class="flex ">
+                                    <img src="assets/images/icon-list.svg" alt="list icon" class="inline mr-2">
+                                    <li class="text-sm py-2">Product discovery and building what matters</li>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/images/icon-list.svg" alt="list icon" class="inline mr-2">
+                                    <li class="text-sm py-2">Mesuring to ensure updates are a success</li>
+                                </div>
+                                <div class="flex">
+                                    <img src="assets/images/icon-list.svg" alt="list icon" class="inline mr-2">
+                                    <li class="text-sm py-2">And much more!</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="input-sec py-4 relative" >
+                        <label 
+                        for="email" 
+                        class="text-sm">Email address</label>
+                        <input  
+                          type="email" 
+                          class="email-input outline outline-1 py-3 px-4 mt-2 rounded w-full  hover:outline-2 hover:opacity-95 focus-visible:outline-2 focus-visible:opacity-95" 
+                          placeholder="email@company.com" 
+                          id="email"
+                        >
+                        <p  class="error-message text-xs text-red-600 mt-2 absolute top-6 right-0  text-wrap font-medium hidden">Please enter a valid email address.</p>
+                        
+                            <a href="#" 
+                           id="subscribe-btn" 
+                           class="btn text-white py-3 px-7 mt-4 font-medium rounded-lg w-full block text-center "
+                        >
+                          Subscribe to monthly newsletter
+                        </a>
+                    
+                        
+                      </div>
+                      
+                      
+                    
+                </div>
+            </div>
+            
+            <div class="thank-view bg-white  max-w-96 hidden px-4 pb-4" >
+                <img src="assets/images/icon-success.svg" alt="Thanks Logo"  class="py-4 pr-0">
+                <h1 class="font-semibold text-2xl mb-2">Thanks for subscribing!</h1>
+                <p>A confirmation email has been sent to <span class="font-semibold">ash@loremcompany.com</span>. 
+                    Please open it and click the button inside to confirm your subscription.</p>
+
+                <a href="#" class="btn text-white py-3 px-7 mt-4 font-medium rounded-lg w-full block text-center dismiss-btn">Dismiss message</a>
+            </div>
+        </div>
+        
+       
+
+            
+    </main>
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+  
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!-- Success message end -->
+</body>
+</html>
